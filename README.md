@@ -26,13 +26,38 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+Map is an array function that loops through an array and maps each value in a specifed way, returns a new array with these new values. 
+    One use case for map could be returning an array of values based on a specific key in an object array. For example creating a list of names from an array of person objects. 
+
+Reduce is an array method that returns a single value based on the entire array. 
+    For example say you have an array of numbers, you could use reduce to easily return the sum of all of the numbers. 
+
+Filter is an array method that returns a new array that contains only the values from the original that pass a conditional statment. 
+    For example say you have an array of names and you only want to return the names that start with 'a' this would be a perfect case for filter
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback function is a function that you pass into a function
+
+A higher order function is a function that accepts a function as a parameter. 
 
 3. Explain what a closure is.
 
+A closure happens when a function is enclosed by another function and the inner function references something in the lexical scope.  
+
 4. Describe the four principles of the 'this' keyword.
 
+Implicit binding: When calling a method on an object the this key word refers to the Object to the left of the dot. 
+
+Explicit binding: When we use the functions (`call` , `apply` , `bind`) we call a function with an object where the function lives outside of the object's execution context. 
+
+Global / window binding: when you reference `this` in the global scope. (returns the window or console object)
+
+New binding: `this` refers to the object that is returned by the function called with the new keyword
+
 5. Why do we need super() in an extended class?
+
+`super` allows us to access the methods within a parent class. (Child.proto = {...Parent.proto})
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
